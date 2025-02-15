@@ -1,0 +1,57 @@
+[project]
+name = "python-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.13"
+
+dependencies = [
+    "logfire==3.5.3",
+    "pydantic==2.10.6",
+]
+
+[dependency-groups]
+dev = [
+    "mypy==1.15.0",
+    "pytest-cov==6.0.0",
+    "pytest==8.3.4",
+    "pytest-asyncio>=0.25.3",
+    "ruff==0.9.6",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+exclude = ["tests/"]
+files = ["src"]
+no_implicit_optional = true
+strict = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+
+[tool.ruff]
+line-length = 120
+lint.select = [
+    "E", # Pycodestyle errors
+    "F", # Pyflakes
+    "I", # Isort
+    "B", # flake8-bugbear
+    "C", # flake8-comprehensions
+    "W", # Pycodestyle warnings
+]
+lint.ignore = []
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--cov=src --cov-report=term-missing"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
