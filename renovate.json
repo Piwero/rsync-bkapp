@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "automerge": false,
+  "automerge": true,
   "automergeType": "pr",
   "addLabels": ["dependencies"],
   "minimumReleaseAge": "7 days"
