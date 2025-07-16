@@ -82,9 +82,9 @@ wheels = [
 
 [[package]]
 name = "crontab"
-version = "1.0.4"
+version = "1.0.5"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1e/8b/3ea72ac8e26090b63779b4e0074af79b02bbbab7ddd01b36109bc0892d31/crontab-1.0.4.tar.gz", hash = "sha256:715b0e5e105bc62c9683cbb93c1cc5821e07a3e28d17404576d22dba7a896c92", size = 21677, upload-time = "2025-04-09T18:23:59.01Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d6/36/a255b6f5a2e22df03fd2b2f3088974b44b8c9e9407e26b44742cb7cfbf5b/crontab-1.0.5.tar.gz", hash = "sha256:f80e01b4f07219763a9869f926dd17147278e7965a928089bca6d3dc80ae46d5", size = 21963, upload-time = "2025-07-09T17:09:38.264Z" }
 
 [[package]]
 name = "deprecated"
@@ -470,7 +470,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "crontab", specifier = "==1.0.4" },
+    { name = "crontab", specifier = "==1.0.5" },
     { name = "logfire", specifier = "==3.23.0" },
     { name = "pydantic", specifier = "==2.11.7" },
 ]
